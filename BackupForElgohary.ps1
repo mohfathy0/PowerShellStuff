@@ -47,12 +47,10 @@ if($Null -eq $LatestBackupFileName )
     Write-host "Testing backup"
     if(Test-Path $("$BackupDirectory/$LatestBackupFileName"))
     {
-        Write-Host "Copy backup Complete!"
+        Write-Host "Copy backup complete!"
     } else
     {
         Write-Warning "Something went wrong. Please check manually"
     }
 }
 Set-ExecutionPolicy -ExecutionPolicy $ExecutionPolicy -Force -Verbose
-
-
